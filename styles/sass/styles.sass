@@ -32,7 +32,7 @@ h2
   margin: 5px 0 0 0
   font-size: 1.3em
 p
-  line-height: 1.9
+  line-height: 1.8
   color: $col-neutral-dark
 .subtitle
   font-size: 1.1em
@@ -46,6 +46,8 @@ p
   -moz-box-shadow: $shadow
   -webkit-box-shadow: $shadow
   box-shadow: $shadow
+  // max-width: 400px
+  margin: 0 auto
 
 #component > section
   padding: 23px
@@ -98,3 +100,29 @@ button
 #why-us ul li
   margin-top: 3px
   opacity: 0.6
+
+
+/*
+ * MAJOR BREAKPOINT
+ * Medium+ viewports, over 550px wide
+ */
+@media screen and (min-width: 550px)
+  h1
+    font-size: 1.7em
+    margin-bottom: 20px
+  #component
+    max-width: 635px
+    grid-template-columns: 1fr 1fr
+  #component > section
+    padding: 32px 40px 40px 30px
+  #about
+    grid-column: 1 / span 2
+  #about p
+    margin: 10px 0 0 0
+    font-size: 1.1em
+  .subtitle
+    font-size: 1.2em !important
+  #cost
+    border-radius: 0 0 0 $border-radius
+  #why-us
+    border-radius: 0 0 $border-radius 0
