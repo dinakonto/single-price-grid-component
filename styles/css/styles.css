@@ -1,3 +1,116 @@
+/* * BASE LAYOUT
+ * */
+* {
+  box-sizing: border-box;
+  font-family: "Karla", Helvetica, sans-serif;
+}
 
+body {
+  margin: 0;
+  padding: 75px 30px;
+  font-size: 14px;
+  background-color: #e5eff5;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.4em;
+  color: #2ab2af;
+}
+
+h2 {
+  margin: 5px 0 0 0;
+  font-size: 1.3em;
+}
+
+p {
+  line-height: 1.9;
+  color: #98a6bd;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #c0df34;
+}
+
+#component {
+  display: grid;
+  background: white;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#component > section {
+  padding: 23px;
+}
+
+#cost, #why-us {
+  background: #2ab2af;
+  color: white;
+}
+
+#cost p {
+  margin: 0;
+  font-size: 1.1em;
+  color: white;
+}
+
+.price-block {
+  margin: 20px 0 10px 0;
+}
+
+.price-block p {
+  display: flex;
+  align-items: center;
+}
+
+.price--amount {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+}
+
+.price--period {
+  margin-left: 10px;
+  font-size: 1em;
+  color: white;
+  opacity: 0.5;
+}
+
+button {
+  width: 100%;
+  margin-top: 23px;
+  padding: 14px;
+  background: #c0df34;
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#why-us {
+  opacity: 0.8;
+  border-radius: 0 0 5px 5px;
+}
+
+#why-us ul {
+  padding: 0;
+  margin: 20px 0 0 0;
+  list-style-type: none;
+}
+
+#why-us ul li {
+  margin-top: 3px;
+  opacity: 0.6;
+}
 
 /*# sourceMappingURL=styles.css.map */
