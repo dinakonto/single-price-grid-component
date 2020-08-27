@@ -152,6 +152,21 @@ button {
   #why-us {
     border-radius: 0 0 5px 0;
   }
+
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.1s ease-in-out;
+  }
+
+  button:focus {
+    transform: scale(1.05);
+    outline: none;
+  }
+
+  button:active {
+    background: #a8c71f;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
