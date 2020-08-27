@@ -39,6 +39,7 @@ p
   line-height: 1.5
   font-weight: $font-weight-bold
   color: $col-primary-light
+
 #component
   display: grid
   background: white
@@ -46,9 +47,7 @@ p
   -moz-box-shadow: $shadow
   -webkit-box-shadow: $shadow
   box-shadow: $shadow
-  // max-width: 400px
   margin: 0 auto
-
 #component > section
   padding: 23px
 #cost, #why-us
@@ -88,6 +87,15 @@ button
   -moz-box-shadow: $shadow
   -webkit-box-shadow: $shadow
   box-shadow: $shadow
+button:hover
+  cursor: pointer
+  transform: scale(1.05)
+  transition: 0.1s ease-in-out
+button:focus
+  transform: scale(1.05)
+  outline: none
+button:active
+  background: hsl(71, 73%, 45%)
 
 // WHY US
 #why-us
@@ -107,12 +115,17 @@ button
  * Medium+ viewports, over 550px wide
  */
 @media screen and (min-width: 550px)
+  body
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 100vh
   h1
-    font-size: 1.7em
     margin-bottom: 20px
+    font-size: 1.7em
   #component
-    max-width: 635px
     grid-template-columns: 1fr 1fr
+    max-width: 635px
   #component > section
     padding: 32px 40px 40px 30px
   #about
@@ -126,14 +139,3 @@ button
     border-radius: 0 0 0 $border-radius
   #why-us
     border-radius: 0 0 $border-radius 0
-  button
-
-  button:hover
-    cursor: pointer
-    transform: scale(1.05)
-    transition: 0.1s ease-in-out
-  button:focus
-    transform: scale(1.05)
-    outline: none
-  button:active
-    background: hsl(71, 73%, 45%)

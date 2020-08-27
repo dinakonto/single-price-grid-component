@@ -98,6 +98,21 @@ button {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.1s ease-in-out;
+}
+
+button:focus {
+  transform: scale(1.05);
+  outline: none;
+}
+
+button:active {
+  background: #a8c71f;
+}
+
 #why-us {
   opacity: 0.8;
   border-radius: 0 0 5px 5px;
@@ -118,14 +133,21 @@ button {
  * * Medium+ viewports, over 550px wide
  * */
 @media screen and (min-width: 550px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
   h1 {
-    font-size: 1.7em;
     margin-bottom: 20px;
+    font-size: 1.7em;
   }
 
   #component {
-    max-width: 635px;
     grid-template-columns: 1fr 1fr;
+    max-width: 635px;
   }
 
   #component > section {
@@ -151,21 +173,6 @@ button {
 
   #why-us {
     border-radius: 0 0 5px 0;
-  }
-
-  button:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: 0.1s ease-in-out;
-  }
-
-  button:focus {
-    transform: scale(1.05);
-    outline: none;
-  }
-
-  button:active {
-    background: #a8c71f;
   }
 }
 
